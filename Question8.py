@@ -1,3 +1,5 @@
+# Please first create a database SCHOOL in mysql and you don't need to create any tables just the database
+
 import mysql.connector as msc
 mydb = msc.connect(
     host='localhost',
@@ -59,7 +61,7 @@ def display():
 
     print('-'*len(t))
     for i in d:
-        print("| {} | {} | {} | {} | {} |".format(
+        print("| {:<7d} | {:<30} | {:<7d} | {:<8} | {:<6} |".format(
             i[0], i[1], i[2], i[3], i[4]))
         print('-'*len(t))
 
@@ -114,7 +116,7 @@ def search():
         print(t)
         print('-'*len(t))
         for i in d:
-            print("| {} | {} | {} | {} | {} |".format(
+            print("| {:<7d} | {:<30} | {:<7d} | {:<8} | {:<6} |".format(
                 i[0], i[1], i[2], i[3], i[4]))
             print('-'*len(t))
 
