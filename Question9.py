@@ -1,3 +1,6 @@
+# Please first create a database BILL in mysql and you don't need to create any tables just the database
+
+
 '''
 Write a Python-MySQL Connectivity code to perform the following operation with “Bill” Database Inventory Table.
 Operations:
@@ -67,7 +70,7 @@ def display():
 
     print('-'*len(t))
     for i in d:
-        print("| {} | {} | {} | {} | {} |".format(
+        print("| {:<7d} | {:<20} | {:<7} | {:<8d} | {:<6} |".format(
             i[0], i[1], i[2], i[3], i[4]))
         print('-'*len(t))
 
@@ -110,7 +113,7 @@ def search():
 
         print('-'*len(t))
         for i in d:
-            print("| {} | {} | {} | {} | {} |".format(
+            print("| {:<7d} | {:<20} | {:<7} | {:<8d} | {:<6} |".format(
                 i[0], i[1], i[2], i[3], i[4]))
             print('-'*len(t))
 
